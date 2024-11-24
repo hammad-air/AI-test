@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS Class 01</h1>
+</body>
+<script src="app.js"></script>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "5d702b14-7573-40b4-a9e3-64683fb35739",
+        apiHost: "http://localhost:3000",
+        chatflowConfig: {
+            // topK: 2
+        },
+        theme: {
+            button: {
+                backgroundColor: "#3B81F6",
+                right: 20,
+                bottom: 20,
+                size: "medium",
+                iconColor: "white",
+                customIconSrc: "https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg",
+            },
+            chatWindow: {
+                welcomeMessage: "Hello! I am your JavaScript AI Assistant tell me how can i Help you?",
+                backgroundColor: "#ffffff",
+                height: 600,
+                width: 400,
+                fontSize: 16,
+                poweredByTextColor: "#ffff",
+                botMessage: {
+                    backgroundColor: "#f7f8ff",
+                    textColor: "#303235",
+                    showAvatar: true,
+                    avatarSrc: "https://img.freepik.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg",
+                },
+                userMessage: {
+                    backgroundColor: "#3B81F6",
+                    textColor: "#ffffff",
+                    showAvatar: true,
+                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                },
+                textInput: {
+                    placeholder: "Type your question",
+                    backgroundColor: "#ffffff",
+                    textColor: "#303235",
+                    sendButtonColor: "#3B81F6",
+                }
+            }
+        }
+    })
+</script>
+
+
+</html>
